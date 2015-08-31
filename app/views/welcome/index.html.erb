@@ -1,0 +1,49 @@
+<style type="text/css">
+.container{
+  width: 800px;
+ 
+
+}
+</style>
+<h1>OutPut</h1>
+
+<body>
+ <div class="container">
+      <div class="row">
+        <div class="col-lg-2">
+        <h3>project title </h3>
+
+              <%  @projects = Project.all %>
+
+                  <% @projects.each do |project| %>
+       <%= project.title %></br>
+
+      <%# if project == @projects.last %>
+                 
+      
+      
+                  <% end %>
+                  </div>
+ <div class="col-lg-2">
+    <h3>username</h3>
+    <%  @users = User.all %>
+
+    <% @users.each do |project| %>
+      
+      <%# if project == @projects.last %>
+   <%= project.name %></br>
+
+      
+      
+    <% end %>
+    </div>
+    <div class="col-lg-2">
+    <h3> categories name </h3>
+    <% @categories = Category.all %>
+    <% @categories.each do |cat| %>
+      <%= cat.name %></br>
+      <% end %>
+      </div>
+      </div></div>
+
+  </body>

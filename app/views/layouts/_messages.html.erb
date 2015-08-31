@@ -1,0 +1,25 @@
+<header>
+  <div id="header">
+    <div class="container full"> 
+      
+      <div class="navigation">
+        <div id="menu-toggle"> <a href="javascript:void(0)"><%= image_tag "menu.png", :alt => "menu"%>Menu</a> </div>
+        <nav>
+          <div id="menu">
+           
+            <ul>
+            <%# if user_signed_in? %>
+              
+            <%# end %>
+            <li><%= link_to "create project", root_path %></li>
+             
+            </ul>
+          </div>
+        </nav>
+      </div>
+       
+      
+      
+    </div>
+  </div>
+</header>

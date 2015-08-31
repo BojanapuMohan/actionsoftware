@@ -1,0 +1,35 @@
+
+<div class="row-fluid">
+  <div class="span3">
+    <div id='cssmenu'>
+      <ul>
+         <li class='active'>
+          <%= link_to '<i class="icon-home"></i>&nbsp;Dashboard'.html_safe, welcome_dashboard_path, :method => :get, :remote =>true %>
+        </li>
+
+         <li class='last'>
+          <%= link_to '<i class="icon-user"></i>&nbsp;Profile'.html_safe, users_profile_path, :method => :get, :remote =>true %>
+        </li>
+         <li class='last'>
+          <%= link_to '<i class="icon-fullscreen"></i>&nbsp;CREATE ARTICLES'.html_safe, new_article_path, :remote =>true %>
+        </li>
+        
+         
+        </ul>
+        <ul>
+        <!-- <li class='last'>
+          <%#= link_to '<i class="icon-fullscreen"></i>&nbsp;CREATE PROJECT'.html_safe, new_project_path, :remote =>true %>
+        </li>
+         -->
+
+</ul>
+         
+
+
+
+         
+  
+  <div class="span7 box3">
+    <%#= render '/devise/registrations/profile' %>
+</div>
+</div>
